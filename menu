@@ -1,0 +1,26 @@
+<Menu>
+
+	<!-- Menu ARGON -->
+	<MenuElem tipo='submenu' Title='Dashboard' Permission = 'none'>
+		<MenuElem tipo='terminal' Title='New ='New' Link = 'argon/dashboard/new' Popup = 'true'/>
+		<MenuElem tipo='terminal' Title='Filter' Permission ='supervisionStatistics' Link = 'argon/filter'/>
+	</MenuElem>
+			
+		<MenuElem tipo='submenu' Title='Usuarios' userAllowed = 'andrea' Permission = 'none'>
+			<MenuElem tipo='terminal' Title='SOAP' userAllowed = 'andrea' Permission ='none' Link = 'modules/configuration/soap_settings.php?&#38;history=default'/>
+			<MenuElem tipo='terminal' Title='REST' userAllowed = 'andrea' Permission ='none' Link = 'modules/configuration/configurationListar.php?history=default'/>
+			<MenuElem tipo='terminal' Title='Templates' userAllowed = 'iquall' Permission ='none' Link = 'include/GUIManager.php?viewName=configuration/templateListar&#38;history=default'/>
+		</MenuElem>
+			
+		<MenuElem tipo='submenu' Title='Performance Management' userAllowed = 'andrea' Permission = 'none'>
+			<MenuElem tipo='terminal' Title='Object Types' userAllowed = 'andrea' Permission ='none' Link = 'include/GUIManager.php?viewName=performance/objectsTypesListar&#38;history=default'/>
+			<MenuElem tipo='terminal' Title='Categories' userAllowed = 'iquall' Permission ='none' Link = 'include/GUIManager.php?viewName=performance/categoriesListar&#38;history=default'/>
+		</MenuElem>
+        <MenuElem tipo='terminal' Title='Customer Service Log'  Permission ='security' Link = 'include/GUIManager.php?viewName=configuration/tabCustomer&#38;history=default&#38;windowFormat=2'/>
+    <MenuElem tipo='terminal' Title='Protocols'  Permission ='security' Link = 'include/GUIManager.php?viewName=configuration/protocol/protocolListar&#38;history=default'/>
+    <MenuElem tipo='terminal' Title='Targets'  Permission ='security' Link = 'include/GUIManager.php?viewName=configuration/protocol/targetListar&#38;history=default'/>
+	</MenuElem>
+	<!-- Fin menu ARGON-->		
+
+</Menu>			
+	<!-- Fin menu -->
